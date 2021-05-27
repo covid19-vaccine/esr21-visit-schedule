@@ -25,7 +25,7 @@ esr21_enrollment_schedule = Schedule(
     verbose_name='ESR21 Enrollment Schedule',
     onschedule_model='esr21_subject.onschedule',
     offschedule_model='esr21_prn.subjectoffstudy',
-    consent_model='esr21_subject.subjectconsent',
+    consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
 visit0 = Visit(
@@ -46,7 +46,7 @@ esr21_fu_schedule = Schedule(
     verbose_name='ESR21 Follow Up Schedule',
     onschedule_model='esr21_subject.onschedule',
     offschedule_model='esr21_prn.subjectoffstudy',
-    consent_model='esr21_subject.subjectconsent',
+    consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
 visit1 = Visit(

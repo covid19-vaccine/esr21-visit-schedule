@@ -25,7 +25,7 @@ esr21_sub_enrollment_schedule = Schedule(
     verbose_name='ESR21 Sub Cohort Enrollment Schedule',
     onschedule_model='esr21_subject.onschedule',
     offschedule_model='esr21_prn.subjectoffstudy',
-    consent_model='esr21_subject.subjectconsent',
+    consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
 visit0 = Visit(
@@ -46,7 +46,7 @@ esr21_sub_fu_schedule = Schedule(
     verbose_name='ESR21 Follow Up Schedule',
     onschedule_model='esr21_subject.onschedule',
     offschedule_model='esr21_prn.subjectoffstudy',
-    consent_model='esr21_subject.subjectconsent',
+    consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
 visit1 = Visit(
@@ -170,11 +170,11 @@ visit8 = Visit(
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
-esr21_fu_schedule.add_visit(visit=visit1)
-esr21_fu_schedule.add_visit(visit=visit2)
-esr21_fu_schedule.add_visit(visit=visit3)
-esr21_fu_schedule.add_visit(visit=visit4)
-esr21_fu_schedule.add_visit(visit=visit5)
-esr21_fu_schedule.add_visit(visit=visit6)
-esr21_fu_schedule.add_visit(visit=visit7)
-esr21_fu_schedule.add_visit(visit=visit8)
+esr21_sub_fu_schedule.add_visit(visit=visit1)
+esr21_sub_fu_schedule.add_visit(visit=visit2)
+esr21_sub_fu_schedule.add_visit(visit=visit3)
+esr21_sub_fu_schedule.add_visit(visit=visit4)
+esr21_sub_fu_schedule.add_visit(visit=visit5)
+esr21_sub_fu_schedule.add_visit(visit=visit6)
+esr21_sub_fu_schedule.add_visit(visit=visit7)
+esr21_sub_fu_schedule.add_visit(visit=visit8)
