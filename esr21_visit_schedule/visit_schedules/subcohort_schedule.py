@@ -24,13 +24,13 @@ esr21_sub_enrollment_schedule = Schedule(
     name='esr21_sub_enroll_schedule',
     verbose_name='ESR21 Sub Cohort Enrollment Schedule',
     onschedule_model='esr21_subject.onschedule',
-    offschedule_model='esr21_prn.subjectoffstudy',
+    offschedule_model='esr21_subject.offschedule',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
 visit0 = Visit(
     code='1000',
-    title='Enrollment Visit',
+    title='Month 1 Week 0 Day 0 Visit',
     timepoint=0,
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
@@ -45,13 +45,13 @@ esr21_sub_fu_schedule = Schedule(
     name='esr21_sub_fu_schedule',
     verbose_name='ESR21 Follow Up Schedule',
     onschedule_model='esr21_subject.onschedule',
-    offschedule_model='esr21_prn.subjectoffstudy',
+    offschedule_model='esr21_subject.offschedule',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
 visit1 = Visit(
     code='1001',
-    title='Week 1 visit',
+    title='Month 1 Week 1 Day 0 Visit',
     timepoint=2,
     rbase=relativedelta(weeks=1),
     rlower=relativedelta(days=0),
@@ -62,7 +62,7 @@ visit1 = Visit(
 
 visit2 = Visit(
     code='1002',
-    title='Week 2 visit',
+    title='Month 1 Week 2 Day ' + u'\u00B1' + '1 Visit',
     timepoint=3,
     rbase=relativedelta(weeks=2),
     rlower=relativedelta(days=1),
@@ -73,7 +73,7 @@ visit2 = Visit(
 
 visit3 = Visit(
     code='1003',
-    title='Week 3 visit',
+    title='Month 1 Week 3 Day ' + u'\u00B1' + '1 Visit',
     timepoint=4,
     rbase=relativedelta(weeks=3),
     rlower=relativedelta(days=1),
@@ -84,7 +84,7 @@ visit3 = Visit(
 
 visit4 = Visit(
     code='1004',
-    title='Week 4 visit',
+    title='Month 1 Week 4 Day ' + u'\u00B1' + '1 Visit',
     timepoint=5,
     rbase=relativedelta(weeks=4),
     rlower=relativedelta(days=1),
@@ -95,7 +95,7 @@ visit4 = Visit(
 
 visit5 = Visit(
     code='1010',
-    title='Week 10 visit',
+    title='Month 3 Week 10 Day ' + u'\u00B1' + '14 visit',
     timepoint=6,
     rbase=relativedelta(weeks=10),
     rlower=relativedelta(days=14),
@@ -106,7 +106,7 @@ visit5 = Visit(
 
 visit6 = Visit(
     code='1011',
-    title='Week 11 visit',
+    title='Month 3 Week 11 Day ' + u'\u00B1' + '14 visit',
     timepoint=7,
     rbase=relativedelta(weeks=11),
     rlower=relativedelta(days=14),
@@ -117,7 +117,7 @@ visit6 = Visit(
 
 visit7 = Visit(
     code='1014',
-    title='Week 14 visit',
+    title='Month 3 Week 14 Day ' + u'\u00B1' + '14 visit',
     timepoint=8,
     rbase=relativedelta(weeks=14),
     rlower=relativedelta(days=14),
@@ -128,7 +128,7 @@ visit7 = Visit(
 
 visit7 = Visit(
     code='1015',
-    title='Week 2 to 12 visit',
+    title='Month 2 to 12 visit',
     timepoint=8,
     rbase=relativedelta(weeks=14),
     rlower=relativedelta(days=14),
@@ -139,7 +139,7 @@ visit7 = Visit(
 
 visit8 = Visit(
     code='1026',
-    title='Month 6 visit',
+    title='Month 6 Week 26 Day ' + u'\u00B1' + '3 Visit',
     timepoint=9,
     rbase=relativedelta(weeks=26),
     rlower=relativedelta(days=3),
@@ -150,7 +150,7 @@ visit8 = Visit(
 
 visit7 = Visit(
     code='1039',
-    title='Month 9 visit',
+    title='Month 9 Week 39 Day ' + u'\u00B1' + '3 Visit',
     timepoint=8,
     rbase=relativedelta(weeks=39),
     rlower=relativedelta(days=3),
@@ -161,7 +161,7 @@ visit7 = Visit(
 
 visit8 = Visit(
     code='1052',
-    title='Month 12 visit',
+    title='Month 12 Week 52 Day ' + u'\u00B1' + '3 Visit',
     timepoint=9,
     rbase=relativedelta(weeks=52),
     rlower=relativedelta(days=3),
