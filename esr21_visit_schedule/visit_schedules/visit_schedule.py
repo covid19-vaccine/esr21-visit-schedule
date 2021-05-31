@@ -7,7 +7,7 @@ esr21_visit_schedule = VisitSchedule(
     verbose_name='ESR21',
     offstudy_model='esr21_prn.subjectoffstudy',
     locator_model='esr21_subject.subjectlocator',
-    death_report_model='esr21_prn.death_report',
+    death_report_model='esr21_prn.deathreport',
     previous_visit_schedule=None)
 
 esr21_visit_schedule.add_schedule(esr21_enrollment_schedule)
