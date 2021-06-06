@@ -128,7 +128,7 @@ visit7 = Visit(
 
 visit7 = Visit(
     code='1015',
-    title='Month 2 to 12 visit',
+    title='Month     2 to 12 visit',
     timepoint=8,
     rbase=relativedelta(weeks=14),
     rlower=relativedelta(days=14),
