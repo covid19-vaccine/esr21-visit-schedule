@@ -30,7 +30,7 @@ esr21_enrollment_schedule = Schedule(
 
 visit0 = Visit(
     code='1000',
-    title='Month 1 Week 0 Day 0 Visit',
+    title='Day 0 Month 1 Visit',
     timepoint=0,
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
@@ -50,8 +50,8 @@ esr21_fu_schedule = Schedule(
     appointment_model='edc_appointment.appointment')
 
 visit1 = Visit(
-    code='1001',
-    title='Month 1 Week 1 Day ' + u'\u00B1' + '3 Visit',
+    code='1007',
+    title='Day 7(' + u'\u00B1' + '3) Month 1 Visit',
     timepoint=2,
     rbase=relativedelta(weeks=1),
     rlower=relativedelta(days=3),
@@ -61,8 +61,8 @@ visit1 = Visit(
     facility_name='5-day clinic')
 
 visit2 = Visit(
-    code='1002',
-    title='Month 1 Week 2 Day ' + u'\u00B1' + '3 Visit',
+    code='1014',
+    title='Day 14(' + u'\u00B1' + '3) Month 1 Visit',
     timepoint=3,
     rbase=relativedelta(weeks=2),
     rlower=relativedelta(days=3),
@@ -72,8 +72,8 @@ visit2 = Visit(
     facility_name='5-day clinic')
 
 visit3 = Visit(
-    code='1004',
-    title='Month 1 Week 4 Day ' + u'\u00B1' + '3 Visit',
+    code='1028',
+    title='Day 28(' + u'\u00B1' + '3) Month 1 Visit',
     timepoint=4,
     rbase=relativedelta(weeks=4),
     rlower=relativedelta(days=3),
@@ -83,8 +83,8 @@ visit3 = Visit(
     facility_name='5-day clinic')
 
 visit4 = Visit(
-    code='1010',
-    title='Month 3 Week 10 Day ' + u'\u00B1' + '14 Visit',
+    code='1070',
+    title='Day 70(' + u'\u00B1' + '14) Month 3 Visit',
     timepoint=5,
     rbase=relativedelta(weeks=10),
     rlower=relativedelta(days=14),
@@ -94,8 +94,8 @@ visit4 = Visit(
     facility_name='5-day clinic')
 
 visit5 = Visit(
-    code='1011',
-    title='Month 3 Week 11 Day ' + u'\u00B1' + '3 Visit',
+    code='1077',
+    title='Day 77(' + u'\u00B1' + '3) Month 3 Visit',
     timepoint=6,
     rbase=relativedelta(weeks=11),
     rlower=relativedelta(days=3),
@@ -105,8 +105,8 @@ visit5 = Visit(
     facility_name='5-day clinic')
 
 visit6 = Visit(
-    code='1012',
-    title='Month 3 Week 12 Day ' + u'\u00B1' + '3 Visit',
+    code='1084',
+    title='Day 84(' + u'\u00B1' + '3) Month 3 Visit',
     timepoint=7,
     rbase=relativedelta(weeks=12),
     rlower=relativedelta(days=3),
@@ -116,8 +116,8 @@ visit6 = Visit(
     facility_name='5-day clinic')
 
 visit7 = Visit(
-    code='1014',
-    title='Month 3 Week 14 Day ' + u'\u00B1' + '3 Visit',
+    code='1098',
+    title='Day 98(' + u'\u00B1' + '3) Month 3 Visit',
     timepoint=8,
     rbase=relativedelta(weeks=14),
     rlower=relativedelta(days=3),
@@ -127,8 +127,8 @@ visit7 = Visit(
     facility_name='5-day clinic')
 
 visit8 = Visit(
-    code='1026',
-    title='Month 6 Week 26 Day ' + u'\u00B1' + '14 Visit',
+    code='1182',
+    title='Day 182(' + u'\u00B1' + '14) Month 6 Visit',
     timepoint=9,
     rbase=relativedelta(weeks=26),
     rlower=relativedelta(days=14),
@@ -138,8 +138,8 @@ visit8 = Visit(
     facility_name='5-day clinic')
 
 visit9 = Visit(
-    code='1039',
-    title='Month 9 Week 39 Day ' + u'\u00B1' + '14 Visit',
+    code='1273',
+    title='Day 273(' + u'\u00B1' + '14) Month 9 Visit',
     timepoint=10,
     rbase=relativedelta(weeks=39),
     rlower=relativedelta(days=14),
@@ -149,8 +149,8 @@ visit9 = Visit(
     facility_name='5-day clinic')
 
 visit10 = Visit(
-    code='1052',
-    title='Month 12 Week 52 Day ' + u'\u00B1' + '14 Visit',
+    code='1364',
+    title='Day 364(' + u'\u00B1' + '14) Month 12 Visit',
     timepoint=11,
     rbase=relativedelta(weeks=52),
     rlower=relativedelta(days=14),
