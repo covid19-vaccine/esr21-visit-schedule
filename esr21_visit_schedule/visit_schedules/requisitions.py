@@ -5,7 +5,7 @@ from esr21_labs import humoral_immunogenicity_panel, sars_pcr_panel
 illness_requisitions = FormsCollection(
     Requisition(
         show_order=10,
-        panel=wb_cmi_panel, required=True, additional=False),
+        panel=wb_cmi_panel, required=False, additional=False),
     Requisition(
         show_order=20,
         panel=humoral_immunogenicity_panel, required=False, additional=False),)
@@ -13,12 +13,12 @@ illness_requisitions = FormsCollection(
 sample_collection_requisitions = FormsCollection(
     Requisition(
         show_order=10,
-        panel=sars_pcr_panel, required=True, additional=False),)
+        panel=sars_pcr_panel, required=False, additional=False),)
 
 post_vax_requisitions = FormsCollection(
     Requisition(
         show_order=10,
-        panel=sars_pcr_panel, required=True, additional=False),
+        panel=sars_pcr_panel, required=False, additional=False),
     Requisition(
         show_order=20,
         panel=wb_cmi_panel, required=False, additional=False),)
@@ -26,4 +26,4 @@ post_vax_requisitions = FormsCollection(
 whole_blood_requisitions = FormsCollection(
     Requisition(
         show_order=10,
-        panel=wb_cmi_panel, required=True, additional=False),)
+        panel=wb_cmi_panel, required=False, additional=False),)
