@@ -21,7 +21,7 @@ class Visit(BaseVisit):
 
 # schedule for new participants
 esr21_sub_enrollment_schedule = Schedule(
-    name='esr21_sub_enroll_schedule',
+    name='esr21_sub_enrol_schedule',
     verbose_name='ESR21 Sub Cohort Enrollment Schedule',
     onschedule_model='esr21_subject.onschedule',
     offschedule_model='esr21_subject.offschedule',
@@ -30,7 +30,7 @@ esr21_sub_enrollment_schedule = Schedule(
 
 visit0 = Visit(
     code='1000',
-    title='Month 1 Week 0 Day 0 Visit',
+    title='Day 0 Month 1 Visit',
     timepoint=0,
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
@@ -50,45 +50,45 @@ esr21_sub_fu_schedule = Schedule(
     appointment_model='edc_appointment.appointment')
 
 visit1 = Visit(
-    code='1001',
-    title='Month 1 Week 1 Day 0 Visit',
+    code='1007',
+    title='Day 7(' + u'\u00B1' + '3) Month 1 Visit',
     timepoint=2,
     rbase=relativedelta(weeks=1),
-    rlower=relativedelta(days=0),
-    rupper=relativedelta(days=0),
+    rlower=relativedelta(days=3),
+    rupper=relativedelta(days=3),
     requisitions=None,
     crfs=crf.get('week1_10'),
     facility_name='5-day clinic')
 
 visit2 = Visit(
-    code='1002',
-    title='Month 1 Week 2 Day ' + u'\u00B1' + '1 Visit',
+    code='1014',
+    title='Day 14(' + u'\u00B1' + '3) Month 1 Visit',
     timepoint=3,
     rbase=relativedelta(weeks=2),
-    rlower=relativedelta(days=1),
-    rupper=relativedelta(days=1),
+    rlower=relativedelta(days=3),
+    rupper=relativedelta(days=3),
     requisitions=None,
     crfs=crf.get('week1_10'),
     facility_name='5-day clinic')
 
 visit3 = Visit(
-    code='1003',
-    title='Month 1 Week 3 Day ' + u'\u00B1' + '1 Visit',
+    code='1021',
+    title='Day 21(' + u'\u00B1' + '3) Month 1 Visit',
     timepoint=4,
     rbase=relativedelta(weeks=3),
-    rlower=relativedelta(days=1),
-    rupper=relativedelta(days=1),
+    rlower=relativedelta(days=3),
+    rupper=relativedelta(days=3),
     requisitions=None,
     crfs=crf.get('week1_10'),
     facility_name='5-day clinic')
 
 visit4 = Visit(
-    code='1004',
-    title='Month 1 Week 4 Day ' + u'\u00B1' + '1 Visit',
+    code='1028',
+    title='Day 28(' + u'\u00B1' + '3) Month 1 Visit',
     timepoint=5,
     rbase=relativedelta(weeks=4),
-    rlower=relativedelta(days=1),
-    rupper=relativedelta(days=1),
+    rlower=relativedelta(days=3),
+    rupper=relativedelta(days=3),
     requisitions=None,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
