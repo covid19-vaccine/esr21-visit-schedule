@@ -1,9 +1,8 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
 
-from .crfs import crf
-from .requisitions import sample_collection_requisitions, post_vax_requisitions
-from .requisitions import whole_blood_requisitions
+from ..crfs_requisitions import crf, sample_collection_requisitions, post_vax_requisitions
+from ..crfs_requisitions import whole_blood_requisitions
 
 
 class Visit(BaseVisit):
@@ -53,8 +52,8 @@ esr21_fu_schedule = Schedule(
 visit1 = Visit(
     code='1007',
     title='Day 7(' + u'\u00B1' + '3) Month 1 Visit',
-    timepoint=2,
-    rbase=relativedelta(weeks=1),
+    timepoint=1,
+    rbase=relativedelta(days=7),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
     requisitions=whole_blood_requisitions,
@@ -64,8 +63,8 @@ visit1 = Visit(
 visit2 = Visit(
     code='1014',
     title='Day 14(' + u'\u00B1' + '3) Month 1 Visit',
-    timepoint=3,
-    rbase=relativedelta(weeks=2),
+    timepoint=2,
+    rbase=relativedelta(days=14),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
     requisitions=whole_blood_requisitions,
@@ -75,8 +74,8 @@ visit2 = Visit(
 visit3 = Visit(
     code='1028',
     title='Day 28(' + u'\u00B1' + '3) Month 1 Visit',
-    timepoint=4,
-    rbase=relativedelta(weeks=4),
+    timepoint=3,
+    rbase=relativedelta(days=28),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
     requisitions=whole_blood_requisitions,
@@ -86,8 +85,8 @@ visit3 = Visit(
 visit4 = Visit(
     code='1070',
     title='Day 70(' + u'\u00B1' + '14) Month 3 Visit',
-    timepoint=5,
-    rbase=relativedelta(weeks=10),
+    timepoint=4,
+    rbase=relativedelta(days=70),
     rlower=relativedelta(days=14),
     rupper=relativedelta(days=14),
     requisitions=post_vax_requisitions,
@@ -97,8 +96,8 @@ visit4 = Visit(
 visit5 = Visit(
     code='1077',
     title='Day 77(' + u'\u00B1' + '3) Month 3 Visit',
-    timepoint=6,
-    rbase=relativedelta(weeks=11),
+    timepoint=5,
+    rbase=relativedelta(days=77),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
     requisitions=whole_blood_requisitions,
@@ -108,8 +107,8 @@ visit5 = Visit(
 visit6 = Visit(
     code='1084',
     title='Day 84(' + u'\u00B1' + '3) Month 3 Visit',
-    timepoint=7,
-    rbase=relativedelta(weeks=12),
+    timepoint=6,
+    rbase=relativedelta(days=84),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
     requisitions=whole_blood_requisitions,
@@ -119,8 +118,8 @@ visit6 = Visit(
 visit7 = Visit(
     code='1098',
     title='Day 98(' + u'\u00B1' + '3) Month 3 Visit',
-    timepoint=8,
-    rbase=relativedelta(weeks=14),
+    timepoint=7,
+    rbase=relativedelta(days=98),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
     requisitions=whole_blood_requisitions,
@@ -130,8 +129,8 @@ visit7 = Visit(
 visit8 = Visit(
     code='1182',
     title='Day 182(' + u'\u00B1' + '14) Month 6 Visit',
-    timepoint=9,
-    rbase=relativedelta(weeks=26),
+    timepoint=8,
+    rbase=relativedelta(days=182),
     rlower=relativedelta(days=14),
     rupper=relativedelta(days=14),
     requisitions=whole_blood_requisitions,
@@ -141,8 +140,8 @@ visit8 = Visit(
 visit9 = Visit(
     code='1273',
     title='Day 273(' + u'\u00B1' + '14) Month 9 Visit',
-    timepoint=10,
-    rbase=relativedelta(weeks=39),
+    timepoint=9,
+    rbase=relativedelta(days=273),
     rlower=relativedelta(days=14),
     rupper=relativedelta(days=14),
     requisitions=None,
@@ -152,8 +151,8 @@ visit9 = Visit(
 visit10 = Visit(
     code='1364',
     title='Day 364(' + u'\u00B1' + '14) Month 12 Visit',
-    timepoint=11,
-    rbase=relativedelta(weeks=52),
+    timepoint=10,
+    rbase=relativedelta(days=364),
     rlower=relativedelta(days=14),
     rupper=relativedelta(days=14),
     requisitions=None,

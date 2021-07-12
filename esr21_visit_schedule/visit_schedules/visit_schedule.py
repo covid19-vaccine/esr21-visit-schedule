@@ -1,7 +1,8 @@
 from edc_visit_schedule import VisitSchedule, site_visit_schedules
 
-from .schedule import esr21_enrollment_schedule, esr21_fu_schedule
-from .illness_schedule import esr21_illness_schedule
+from .schedules import esr21_enrollment_schedule, esr21_fu_schedule
+from .schedules import esr21_sub_enrollment_schedule
+from .schedules import esr21_illness_schedule, esr21_sub_fu_schedule
 
 esr21_visit_schedule = VisitSchedule(
     name='esr21_visit_schedule',
@@ -13,6 +14,8 @@ esr21_visit_schedule = VisitSchedule(
 
 esr21_visit_schedule.add_schedule(esr21_enrollment_schedule)
 esr21_visit_schedule.add_schedule(esr21_fu_schedule)
-# esr21_visit_schedule.add_schedule(esr21_illness_schedule)
+esr21_visit_schedule.add_schedule(esr21_sub_enrollment_schedule)
+esr21_visit_schedule.add_schedule(esr21_sub_fu_schedule)
+esr21_visit_schedule.add_schedule(esr21_illness_schedule)
 
 site_visit_schedules.register(esr21_visit_schedule)

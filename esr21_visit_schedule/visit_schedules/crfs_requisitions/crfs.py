@@ -39,17 +39,17 @@ crfs_day_70 = FormsCollection(
 crfs_ill_initial = FormsCollection(
     Crf(show_order=1, model='esr21_subject.medicalhistory'),
     Crf(show_order=2, model='esr21_subject.physicalexam'),
-    Crf(show_order=3, model='esr21_subject.concomitantmedications'),
+    Crf(show_order=3, model='esr21_subject.concomitantmedication'),
     Crf(show_order=4, model='esr21_subject.vitalsigns'),
-    Crf(show_order=5, model='esr21_subject.covid19symptoms'),
+    Crf(show_order=5, model='esr21_subject.covid19symptomaticinfections'),
     Crf(show_order=6, model='esr21_subject.seriousadverseevent',
         required=False),
     name='ill_initial',
 )
 
 crfs_ill_4 = FormsCollection(
-    Crf(show_order=1, model='esr21_subject.concomitantmedications'),
-    Crf(show_order=2, model='esr21_subject.covid19symptoms'),
+    Crf(show_order=1, model='esr21_subject.concomitantmedication'),
+    Crf(show_order=2, model='esr21_subject.covid19symptomaticinfections'),
     Crf(show_order=3, model='esr21_subject.seriousadverseevent',
         required=False),
     name='ill_day4',
@@ -57,9 +57,9 @@ crfs_ill_4 = FormsCollection(
 
 crfs_ill_28 = FormsCollection(
     Crf(show_order=1, model='esr21_subject.physicalexam'),
-    Crf(show_order=2, model='esr21_subject.concomitantmedications'),
+    Crf(show_order=2, model='esr21_subject.concomitantmedication'),
     Crf(show_order=3, model='esr21_subject.vitalsigns'),
-    Crf(show_order=4, model='esr21_subject.covid19symptoms'),
+    Crf(show_order=4, model='esr21_subject.covid19symptomaticinfections'),
     Crf(show_order=5, model='esr21_subject.seriousadverseevent',
         required=False),
     name='ill_day28',
