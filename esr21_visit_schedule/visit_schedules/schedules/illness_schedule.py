@@ -18,7 +18,7 @@ class Visit(BaseVisit):
             **kwargs)
 
 
-# schedule for new participants
+# first schedule for ill participants
 esr21_illness_schedule = Schedule(
     name='esr21_illness_schedule',
     verbose_name='ESR21 Illness Visits Schedule',
@@ -63,3 +63,146 @@ visit2 = Visit(
 esr21_illness_schedule.add_visit(visit=visit0)
 esr21_illness_schedule.add_visit(visit=visit1)
 esr21_illness_schedule.add_visit(visit=visit2)
+
+# Second schedule for ill participants
+esr21_illness2_schedule = Schedule(
+    name='esr21_illness2_schedule',
+    verbose_name='ESR21 Illness Visits 2 Schedule',
+    onschedule_model='esr21_subject.onscheduleill',
+    offschedule_model='esr21_subject.offschedule',
+    consent_model='esr21_subject.informedconsent',
+    appointment_model='edc_appointment.appointment')
+
+esr21_illness2_schedule.add_visit(visit=visit0)
+esr21_illness2_schedule.add_visit(visit=visit1)
+esr21_illness2_schedule.add_visit(visit=visit2)
+
+# Third schedule for ill participants
+esr21_illness3_schedule = Schedule(
+    name='esr21_illness3_schedule',
+    verbose_name='ESR21 Illness Visits 3 Schedule',
+    onschedule_model='esr21_subject.onscheduleill',
+    offschedule_model='esr21_subject.offschedule',
+    consent_model='esr21_subject.informedconsent',
+    appointment_model='edc_appointment.appointment')
+
+esr21_illness3_schedule.add_visit(visit=visit0)
+esr21_illness3_schedule.add_visit(visit=visit1)
+esr21_illness3_schedule.add_visit(visit=visit2)
+
+# Fourth schedule for ill participants
+esr21_illness4_schedule = Schedule(
+    name='esr21_illness4_schedule',
+    verbose_name='ESR21 Illness Visits 4 Schedule',
+    onschedule_model='esr21_subject.onscheduleill',
+    offschedule_model='esr21_subject.offschedule',
+    consent_model='esr21_subject.informedconsent',
+    appointment_model='edc_appointment.appointment')
+
+esr21_illness4_schedule.add_visit(visit=visit0)
+esr21_illness4_schedule.add_visit(visit=visit1)
+esr21_illness4_schedule.add_visit(visit=visit2)
+
+# Fifth schedule for ill participants
+esr21_illness5_schedule = Schedule(
+    name='esr21_illness5_schedule',
+    verbose_name='ESR21 Illness Visits 5 Schedule',
+    onschedule_model='esr21_subject.onscheduleill',
+    offschedule_model='esr21_subject.offschedule',
+    consent_model='esr21_subject.informedconsent',
+    appointment_model='edc_appointment.appointment')
+
+esr21_illness5_schedule.add_visit(visit=visit0)
+esr21_illness5_schedule.add_visit(visit=visit1)
+esr21_illness5_schedule.add_visit(visit=visit2)
+
+# Sixth schedule for ill participants
+esr21_illness6_schedule = Schedule(
+    name='esr21_illness6_schedule',
+    verbose_name='ESR21 Illness Visits 6 Schedule',
+    onschedule_model='esr21_subject.onscheduleill',
+    offschedule_model='esr21_subject.offschedule',
+    consent_model='esr21_subject.informedconsent',
+    appointment_model='edc_appointment.appointment')
+
+esr21_illness6_schedule.add_visit(visit=visit0)
+esr21_illness6_schedule.add_visit(visit=visit1)
+esr21_illness6_schedule.add_visit(visit=visit2)
+
+# Seventh schedule for ill participants
+esr21_illness7_schedule = Schedule(
+    name='esr21_illness7_schedule',
+    verbose_name='ESR21 Illness Visits 7 Schedule',
+    onschedule_model='esr21_subject.onscheduleill',
+    offschedule_model='esr21_subject.offschedule',
+    consent_model='esr21_subject.informedconsent',
+    appointment_model='edc_appointment.appointment')
+
+esr21_illness7_schedule.add_visit(visit=visit0)
+esr21_illness7_schedule.add_visit(visit=visit1)
+esr21_illness7_schedule.add_visit(visit=visit2)
+
+# Eighth schedule for ill participants
+esr21_illness8_schedule = Schedule(
+    name='esr21_illness8_schedule',
+    verbose_name='ESR21 Illness Visits 8 Schedule',
+    onschedule_model='esr21_subject.onscheduleill',
+    offschedule_model='esr21_subject.offschedule',
+    consent_model='esr21_subject.informedconsent',
+    appointment_model='edc_appointment.appointment')
+
+esr21_illness8_schedule.add_visit(visit=visit0)
+esr21_illness8_schedule.add_visit(visit=visit1)
+esr21_illness8_schedule.add_visit(visit=visit2)
+
+# Ninth schedule for ill participants
+esr21_illness9_schedule = Schedule(
+    name='esr21_illness9_schedule',
+    verbose_name='ESR21 Illness Visits 9 Schedule',
+    onschedule_model='esr21_subject.onscheduleill',
+    offschedule_model='esr21_subject.offschedule',
+    consent_model='esr21_subject.informedconsent',
+    appointment_model='edc_appointment.appointment')
+
+esr21_illness9_schedule.add_visit(visit=visit0)
+esr21_illness9_schedule.add_visit(visit=visit1)
+esr21_illness9_schedule.add_visit(visit=visit2)
+
+# Tenth schedule for ill participants
+esr21_illness10_schedule = Schedule(
+    name='esr21_illness10_schedule',
+    verbose_name='ESR21 Illness Visits 10 Schedule',
+    onschedule_model='esr21_subject.onscheduleill',
+    offschedule_model='esr21_subject.offschedule',
+    consent_model='esr21_subject.informedconsent',
+    appointment_model='edc_appointment.appointment')
+
+esr21_illness10_schedule.add_visit(visit=visit0)
+esr21_illness10_schedule.add_visit(visit=visit1)
+esr21_illness10_schedule.add_visit(visit=visit2)
+
+# Eleventh schedule for ill participants
+esr21_illness11_schedule = Schedule(
+    name='esr21_illness11_schedule',
+    verbose_name='ESR21 Illness Visits 11 Schedule',
+    onschedule_model='esr21_subject.onscheduleill',
+    offschedule_model='esr21_subject.offschedule',
+    consent_model='esr21_subject.informedconsent',
+    appointment_model='edc_appointment.appointment')
+
+esr21_illness11_schedule.add_visit(visit=visit0)
+esr21_illness11_schedule.add_visit(visit=visit1)
+esr21_illness11_schedule.add_visit(visit=visit2)
+
+# Twelfth schedule for ill participants
+esr21_illness12_schedule = Schedule(
+    name='esr21_illness12_schedule',
+    verbose_name='ESR21 Illness Visits 12 Schedule',
+    onschedule_model='esr21_subject.onscheduleill',
+    offschedule_model='esr21_subject.offschedule',
+    consent_model='esr21_subject.informedconsent',
+    appointment_model='edc_appointment.appointment')
+
+esr21_illness12_schedule.add_visit(visit=visit0)
+esr21_illness12_schedule.add_visit(visit=visit1)
+esr21_illness12_schedule.add_visit(visit=visit2)
