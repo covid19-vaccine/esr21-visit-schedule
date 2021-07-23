@@ -19,7 +19,7 @@ crfs_initial = FormsCollection(
 
 crfs_followup = FormsCollection(
     Crf(show_order=1, model='esr21_subject.adverseevent'),
-    Crf(show_order=2, model='esr21_subject.hospitalization',
+    Crf(show_order=2, model='esr21_subject.hospitalisation',
         required=False),
     name='followup',
 )
