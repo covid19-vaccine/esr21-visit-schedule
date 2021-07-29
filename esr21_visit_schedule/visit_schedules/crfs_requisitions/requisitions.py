@@ -8,7 +8,7 @@ illness_requisitions = FormsCollection(
         panel=wb_cmi_panel, required=True, additional=False),
     Requisition(
         show_order=20,
-        panel=humoral_immunogenicity_panel, required=False, additional=False),)
+        panel=humoral_immunogenicity_panel, required=True, additional=False),)
 
 sample_collection_requisitions = FormsCollection(
     Requisition(
@@ -24,7 +24,7 @@ post_vax2_requisitions = FormsCollection(
         panel=sars_serum_panel, required=True, additional=False),
     Requisition(
         show_order=30,
-        panel=wb_cmi_panel, required=False, additional=False),)
+        panel=wb_cmi_panel, required=True, additional=False),)
 
 post_vax_requisitions = FormsCollection(
     Requisition(
@@ -32,7 +32,7 @@ post_vax_requisitions = FormsCollection(
         panel=sars_pcr_panel, required=True, additional=False),
     Requisition(
         show_order=20,
-        panel=wb_cmi_panel, required=False, additional=False),)
+        panel=wb_cmi_panel, required=True, additional=False),)
 
 whole_blood_requisitions = FormsCollection(
     Requisition(

@@ -58,7 +58,7 @@ visit1 = Visit(
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
     requisitions=sub_fu_requisitions,
-    crfs=crf.get('week1_10'),
+    crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
 visit2 = Visit(
@@ -69,7 +69,7 @@ visit2 = Visit(
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
     requisitions=sub_fu_requisitions,
-    crfs=crf.get('week1_10'),
+    crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
 visit3 = Visit(
@@ -80,7 +80,7 @@ visit3 = Visit(
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
     requisitions=None,
-    crfs=crf.get('week1_10'),
+    crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
 visit4 = Visit(
