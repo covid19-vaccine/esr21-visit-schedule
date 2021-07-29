@@ -1,8 +1,8 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
 
-from ..crfs_requisitions import crf, sample_collection_requisitions, post_vax_requisitions
-from ..crfs_requisitions import whole_blood_requisitions, sub_fu_requisitions, illness_requisitions
+from ..crfs_requisitions import crf, sub_post_vax3_requisitions, post_vax_requisitions
+from ..crfs_requisitions import sub_post_vax_requisitions, sub_fu_requisitions, illness_requisitions
 from ..crfs_requisitions import sub_fu2_requisitions, post_vax2_requisitions
 
 
@@ -36,7 +36,7 @@ visit0 = Visit(
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=illness_requisitions,
+    requisitions=sub_post_vax_requisitions,
     crfs=crf.get('enrollment'),
     facility_name='5-day clinic')
 
@@ -211,7 +211,7 @@ visit15 = Visit(
     rbase=relativedelta(days=182),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=post_vax2_requisitions,
+    requisitions=sub_post_vax3_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
