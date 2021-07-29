@@ -15,6 +15,17 @@ sample_collection_requisitions = FormsCollection(
         show_order=10,
         panel=sars_pcr_panel, required=True, additional=False),)
 
+post_vax2_requisitions = FormsCollection(
+    Requisition(
+        show_order=10,
+        panel=sars_pcr_panel, required=True, additional=False),
+    Requisition(
+        show_order=20,
+        panel=sars_serum_panel, required=True, additional=False),
+    Requisition(
+        show_order=30,
+        panel=wb_cmi_panel, required=False, additional=False),)
+
 post_vax_requisitions = FormsCollection(
     Requisition(
         show_order=10,
@@ -27,3 +38,16 @@ whole_blood_requisitions = FormsCollection(
     Requisition(
         show_order=10,
         panel=wb_cmi_panel, required=True, additional=False),)
+
+sub_fu_requisitions = FormsCollection(
+    Requisition(
+        show_order=10,
+        panel=sars_serum_panel, required=True, additional=False),)
+
+sub_fu2_requisitions = FormsCollection(
+    Requisition(
+        show_order=10,
+        panel=sars_serum_panel, required=True, additional=False),
+    Requisition(
+        show_order=20,
+        panel=sars_pcr_panel, required=True, additional=False))
