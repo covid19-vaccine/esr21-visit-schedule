@@ -1,9 +1,9 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
 
-from ..crfs_requisitions import crf, sub_post_vax3_requisitions, post_vax_requisitions
-from ..crfs_requisitions import sub_post_vax_requisitions, sub_fu_requisitions, illness_requisitions
-from ..crfs_requisitions import sub_fu2_requisitions, post_vax2_requisitions
+from ..crfs_requisitions import crf, sub_post_vax_requisitions, sub_28_98_requisitions
+from ..crfs_requisitions import sub_70_requisitions, sub_fu_requisitions
+from ..crfs_requisitions import sub_fu2_requisitions, sub_182_requisitions
 
 
 class Visit(BaseVisit):
@@ -90,7 +90,7 @@ visit4 = Visit(
     rbase=relativedelta(weeks=4),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=illness_requisitions,
+    requisitions=sub_28_98_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
@@ -156,7 +156,7 @@ visit10 = Visit(
     rbase=relativedelta(days=70),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=post_vax2_requisitions,
+    requisitions=sub_70_requisitions,
     crfs=crf.get('day_70'),
     facility_name='5-day clinic')
 
@@ -200,7 +200,7 @@ visit14 = Visit(
     rbase=relativedelta(days=98),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=illness_requisitions,
+    requisitions=sub_28_98_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
@@ -211,7 +211,7 @@ visit15 = Visit(
     rbase=relativedelta(days=182),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=sub_post_vax3_requisitions,
+    requisitions=sub_182_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 

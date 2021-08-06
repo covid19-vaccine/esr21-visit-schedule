@@ -1,8 +1,8 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
 
-from ..crfs_requisitions import crf, sample_collection_requisitions, post_vax_requisitions
-from ..crfs_requisitions import whole_blood_requisitions
+from ..crfs_requisitions import crf, main_vax1_requisitions, main_fu_requisitions
+from ..crfs_requisitions import main_vax2_requisitions
 
 
 class Visit(BaseVisit):
@@ -35,7 +35,7 @@ visit0 = Visit(
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=sample_collection_requisitions,
+    requisitions=main_vax1_requisitions,
     crfs=crf.get('enrollment'),
     facility_name='5-day clinic')
 
@@ -56,7 +56,7 @@ visit1 = Visit(
     rbase=relativedelta(days=7),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=whole_blood_requisitions,
+    requisitions=main_fu_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
@@ -67,7 +67,7 @@ visit2 = Visit(
     rbase=relativedelta(days=14),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=whole_blood_requisitions,
+    requisitions=main_fu_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
@@ -78,7 +78,7 @@ visit3 = Visit(
     rbase=relativedelta(days=28),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=whole_blood_requisitions,
+    requisitions=main_fu_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
@@ -89,7 +89,7 @@ visit4 = Visit(
     rbase=relativedelta(days=70),
     rlower=relativedelta(days=14),
     rupper=relativedelta(days=14),
-    requisitions=post_vax_requisitions,
+    requisitions=main_vax2_requisitions,
     crfs=crf.get('day_70'),
     facility_name='5-day clinic')
 
@@ -100,7 +100,7 @@ visit5 = Visit(
     rbase=relativedelta(days=77),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=whole_blood_requisitions,
+    requisitions=main_fu_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
@@ -111,7 +111,7 @@ visit6 = Visit(
     rbase=relativedelta(days=84),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=whole_blood_requisitions,
+    requisitions=main_fu_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
@@ -122,7 +122,7 @@ visit7 = Visit(
     rbase=relativedelta(days=98),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=whole_blood_requisitions,
+    requisitions=main_fu_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
@@ -133,7 +133,7 @@ visit8 = Visit(
     rbase=relativedelta(days=182),
     rlower=relativedelta(days=14),
     rupper=relativedelta(days=14),
-    requisitions=whole_blood_requisitions,
+    requisitions=main_fu_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
