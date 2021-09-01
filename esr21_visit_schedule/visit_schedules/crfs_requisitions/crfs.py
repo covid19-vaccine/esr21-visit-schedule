@@ -19,8 +19,7 @@ crfs_initial = FormsCollection(
 
 crfs_followup = FormsCollection(
     Crf(show_order=1, model='esr21_subject.adverseevent'),
-    Crf(show_order=2, model='esr21_subject.hospitalisation',
-        required=False),
+    Crf(show_order=2, model='esr21_subject.hospitalisation'),
     Crf(show_order=3, model='esr21_subject.covid19symptomaticinfections'),
     Crf(show_order=4, model='esr21_subject.pregnancystatus',
         required=False),
@@ -39,7 +38,7 @@ crfs_day_70 = FormsCollection(
 
 crfs_ill_initial = FormsCollection(
     Crf(show_order=1, model='esr21_subject.medicalhistory'),
-    Crf(show_order=2, model='esr21_subject.physicalexam'),
+    Crf(show_order=2, model='esr21_subject.targetedphysicalexamination'),
     Crf(show_order=3, model='esr21_subject.concomitantmedication'),
     Crf(show_order=4, model='esr21_subject.vitalsigns'),
     Crf(show_order=5, model='esr21_subject.covid19symptomaticinfections'),
@@ -57,7 +56,7 @@ crfs_ill_4 = FormsCollection(
 )
 
 crfs_ill_28 = FormsCollection(
-    Crf(show_order=1, model='esr21_subject.physicalexam'),
+    Crf(show_order=1, model='esr21_subject.targetedphysicalexamination'),
     Crf(show_order=2, model='esr21_subject.concomitantmedication'),
     Crf(show_order=3, model='esr21_subject.vitalsigns'),
     Crf(show_order=4, model='esr21_subject.covid19symptomaticinfections'),
