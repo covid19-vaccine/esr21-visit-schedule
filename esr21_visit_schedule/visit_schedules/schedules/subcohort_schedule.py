@@ -15,7 +15,7 @@ class Visit(BaseVisit):
             allow_unscheduled=True if allow_unscheduled is None else allow_unscheduled,
             crfs_unscheduled=crfs_unscheduled,
             requisitions_unscheduled=requisitions_unscheduled,
-            crfs_prn=crfs_prn,
+            crfs_prn=crfs_prn or crf.get('crf_prn'),
             requisitions_prn=requisitions_prn,
             **kwargs)
 

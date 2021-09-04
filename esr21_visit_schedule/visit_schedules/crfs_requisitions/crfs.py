@@ -2,6 +2,13 @@ from edc_visit_schedule import FormsCollection, Crf
 
 crf = {}
 
+crfs_prn = FormsCollection(
+    Crf(show_order=1, model='esr21_subject.concomitantmedication',
+        required=False, additional=False),
+    Crf(show_order=2, model='esr21_subject.hospitalisation',
+        required=False, additional=False),
+    name='crf_prn')
+
 crfs_initial = FormsCollection(
     Crf(show_order=1, model='esr21_subject.demographicsdata'),
     Crf(show_order=2, model='esr21_subject.medicalhistory'),
@@ -70,4 +77,5 @@ crf.update({'enrollment': crfs_initial,
             'followup': crfs_followup,
             'ill_initial': crfs_ill_initial,
             'ill_day4': crfs_ill_4,
-            'ill_day28': crfs_ill_28})
+            'ill_day28': crfs_ill_28,
+            'crf_prn': crfs_prn})
