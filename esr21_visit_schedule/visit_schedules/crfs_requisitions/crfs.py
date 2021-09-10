@@ -26,9 +26,13 @@ crfs_initial = FormsCollection(
 
 crfs_followup = FormsCollection(
     Crf(show_order=1, model='esr21_subject.adverseevent'),
-    Crf(show_order=2, model='esr21_subject.hospitalisation'),
-    Crf(show_order=3, model='esr21_subject.covid19symptomaticinfections'),
-    Crf(show_order=4, model='esr21_subject.pregnancystatus',
+    Crf(show_order=2, model='esr21_subject.seriousadverseevent',
+        required=False),
+    Crf(show_order=3, model='esr21_subject.specialinterestadverseevent',
+        required=False),
+    Crf(show_order=4, model='esr21_subject.hospitalisation'),
+    Crf(show_order=5, model='esr21_subject.covid19symptomaticinfections'),
+    Crf(show_order=6, model='esr21_subject.pregnancystatus',
         required=False),
     name='followup',
 )
