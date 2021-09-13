@@ -23,7 +23,7 @@ esr21_illness_schedule = Schedule(
     name='esr21_illness_schedule',
     verbose_name='ESR21 Illness Visits Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
@@ -69,7 +69,7 @@ esr21_illness2_schedule = Schedule(
     name='esr21_illness2_schedule',
     verbose_name='ESR21 Illness Visits 2 Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
@@ -82,7 +82,7 @@ esr21_illness3_schedule = Schedule(
     name='esr21_illness3_schedule',
     verbose_name='ESR21 Illness Visits 3 Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
@@ -95,7 +95,7 @@ esr21_illness4_schedule = Schedule(
     name='esr21_illness4_schedule',
     verbose_name='ESR21 Illness Visits 4 Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
@@ -108,7 +108,7 @@ esr21_illness5_schedule = Schedule(
     name='esr21_illness5_schedule',
     verbose_name='ESR21 Illness Visits 5 Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
@@ -121,7 +121,7 @@ esr21_illness6_schedule = Schedule(
     name='esr21_illness6_schedule',
     verbose_name='ESR21 Illness Visits 6 Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
@@ -134,7 +134,7 @@ esr21_illness7_schedule = Schedule(
     name='esr21_illness7_schedule',
     verbose_name='ESR21 Illness Visits 7 Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
@@ -147,7 +147,7 @@ esr21_illness8_schedule = Schedule(
     name='esr21_illness8_schedule',
     verbose_name='ESR21 Illness Visits 8 Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
@@ -160,7 +160,7 @@ esr21_illness9_schedule = Schedule(
     name='esr21_illness9_schedule',
     verbose_name='ESR21 Illness Visits 9 Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
@@ -173,7 +173,7 @@ esr21_illness10_schedule = Schedule(
     name='esr21_illness10_schedule',
     verbose_name='ESR21 Illness Visits 10 Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
@@ -186,7 +186,7 @@ esr21_illness11_schedule = Schedule(
     name='esr21_illness11_schedule',
     verbose_name='ESR21 Illness Visits 11 Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
@@ -199,7 +199,7 @@ esr21_illness12_schedule = Schedule(
     name='esr21_illness12_schedule',
     verbose_name='ESR21 Illness Visits 12 Schedule',
     onschedule_model='esr21_subject.onscheduleill',
-    offschedule_model='esr21_subject.offschedule',
+    offschedule_model='esr21_subject.offscheduleill',
     consent_model='esr21_subject.informedconsent',
     appointment_model='edc_appointment.appointment')
 
