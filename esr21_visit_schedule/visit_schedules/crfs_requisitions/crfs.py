@@ -19,8 +19,14 @@ crfs_initial = FormsCollection(
     Crf(show_order=6, model='esr21_subject.pregnancytest',
         required=False),
     Crf(show_order=7, model='esr21_subject.vaccinationdetails'),
-    Crf(show_order=8, model='esr21_subject.vitalsigns'),
-    Crf(show_order=9, model='esr21_subject.covid19preventativebehaviours'),
+    Crf(show_order=8, model='esr21_subject.adverseevent',
+        required=False),
+    Crf(show_order=9, model='esr21_subject.seriousadverseevent',
+        required=False),
+    Crf(show_order=10, model='esr21_subject.specialinterestadverseevent',
+        required=False),
+    Crf(show_order=11, model='esr21_subject.vitalsigns'),
+    Crf(show_order=12, model='esr21_subject.covid19preventativebehaviours'),
     name='enrollment',
 )
 
@@ -44,6 +50,12 @@ crfs_day_70 = FormsCollection(
     Crf(show_order=3, model='esr21_subject.pregnancystatus',
         required=False),
     Crf(show_order=4, model='esr21_subject.vaccinationdetails'),
+    Crf(show_order=8, model='esr21_subject.adverseevent',
+        required=False),
+    Crf(show_order=9, model='esr21_subject.seriousadverseevent',
+        required=False),
+    Crf(show_order=10, model='esr21_subject.specialinterestadverseevent',
+        required=False),
     name='day_70',
 )
 
