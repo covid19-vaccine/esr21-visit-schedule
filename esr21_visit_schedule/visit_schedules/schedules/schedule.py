@@ -35,7 +35,7 @@ visit0 = Visit(
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=None,
+    requisitions=main_vax1_requisitions,
     crfs=crf.get('enrollment'),
     facility_name='5-day clinic')
 
