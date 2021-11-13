@@ -46,16 +46,17 @@ crfs_followup = FormsCollection(
 
 crfs_day_70 = FormsCollection(
     Crf(show_order=1, model='esr21_subject.physicalexam'),
-    Crf(show_order=2, model='esr21_subject.pregnancytest',
+    Crf(show_order=2, model='esr21_subject.vitalsigns'),
+    Crf(show_order=3, model='esr21_subject.pregnancytest',
         required=False),
-    Crf(show_order=3, model='esr21_subject.pregnancystatus',
+    Crf(show_order=4, model='esr21_subject.pregnancystatus',
         required=False),
-    Crf(show_order=4, model='esr21_subject.vaccinationdetails'),
-    Crf(show_order=8, model='esr21_subject.adverseevent',
+    Crf(show_order=5, model='esr21_subject.vaccinationdetails'),
+    Crf(show_order=6, model='esr21_subject.adverseevent',
         required=False),
-    Crf(show_order=9, model='esr21_subject.seriousadverseevent',
+    Crf(show_order=7, model='esr21_subject.seriousadverseevent',
         required=False),
-    Crf(show_order=10, model='esr21_subject.specialinterestadverseevent',
+    Crf(show_order=8, model='esr21_subject.specialinterestadverseevent',
         required=False),
     name='day_70',
 )
