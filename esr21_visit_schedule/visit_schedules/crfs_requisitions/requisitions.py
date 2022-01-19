@@ -43,6 +43,17 @@ sub_post_vax_requisitions = FormsCollection(
         show_order=40,
         panel=humoral_immunogenicity_panel, required=True, additional=False),)
 
+sub_enrol_requisitions = FormsCollection(
+    Requisition(
+        show_order=10,
+        panel=humoral_immunogenicity_panel, required=True, additional=False),
+    Requisition(
+        show_order=20,
+        panel=wb_cmi_panel, required=True, additional=False),
+    Requisition(
+       show_order=30,
+       panel=urine_hcg_panel, required=False, additional=False),)
+
 sub_fu_requisitions = FormsCollection(
     Requisition(
         show_order=10,
