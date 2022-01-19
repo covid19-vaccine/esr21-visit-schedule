@@ -4,6 +4,7 @@ from edc_visit_schedule import Schedule, Visit as BaseVisit
 from ..crfs_requisitions import crf, sub_post_vax_requisitions, sub_28_98_requisitions
 from ..crfs_requisitions import sub_70_requisitions, sub_fu_requisitions
 from ..crfs_requisitions import sub_fu2_requisitions, sub_182_requisitions
+from ..crfs_requisitions import sub_enrol_requisitions
 
 
 class Visit(BaseVisit):
@@ -36,7 +37,7 @@ visit0 = Visit(
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=None,
+    requisitions=sub_enrol_requisitions,
     crfs=crf.get('enrollment'),
     facility_name='5-day clinic')
 
