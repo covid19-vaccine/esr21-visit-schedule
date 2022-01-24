@@ -139,7 +139,7 @@ visit8 = Visit(
     facility_name='5-day clinic')
 
 visit9 = Visit(
-    code='163',
+    code='1063',
     title='Day 63(' + u'\u00B1' + '3) Month 3 Visit',
     timepoint=9,
     rbase=relativedelta(days=63),
