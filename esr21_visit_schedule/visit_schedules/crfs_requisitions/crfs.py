@@ -7,6 +7,12 @@ crfs_prn = FormsCollection(
         required=False, additional=False),
     Crf(show_order=2, model='esr21_subject.hospitalisation',
         required=False, additional=False),
+    Crf(show_order=3, model='esr21_subject.adverseevent',
+        required=False, additional=False),
+    Crf(show_order=9, model='esr21_subject.seriousadverseevent',
+        required=False, additional=False),
+    Crf(show_order=10, model='esr21_subject.specialinterestadverseevent',
+        required=False, additional=False),
     name='crf_prn')
 
 crfs_initial = FormsCollection(
