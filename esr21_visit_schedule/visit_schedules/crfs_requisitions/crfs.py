@@ -7,6 +7,8 @@ crfs_prn = FormsCollection(
         required=False, additional=False),
     Crf(show_order=2, model='esr21_subject.hospitalisation',
         required=False, additional=False),
+    Crf(show_order=3, model='esr21_subject.covid19results',
+        required=False, additional=False),
     name='crf_prn')
 
 crfs_initial = FormsCollection(
@@ -21,8 +23,7 @@ crfs_initial = FormsCollection(
     Crf(show_order=7, model='esr21_subject.vaccinationdetails'),
     Crf(show_order=8, model='esr21_subject.adverseevent',
         required=False),
-    Crf(show_order=9, model='esr21_subject.seriousadverseevent',
-        required=False),
+    Crf(show_order=9, model='esr21_subject.seriousadverseevent'),
     Crf(show_order=10, model='esr21_subject.specialinterestadverseevent',
         required=False),
     Crf(show_order=11, model='esr21_subject.vitalsigns'),
@@ -32,8 +33,7 @@ crfs_initial = FormsCollection(
 
 crfs_followup = FormsCollection(
     Crf(show_order=1, model='esr21_subject.adverseevent'),
-    Crf(show_order=2, model='esr21_subject.seriousadverseevent',
-        required=False),
+    Crf(show_order=2, model='esr21_subject.seriousadverseevent'),
     Crf(show_order=3, model='esr21_subject.specialinterestadverseevent',
         required=False),
     Crf(show_order=4, model='esr21_subject.hospitalisation',
