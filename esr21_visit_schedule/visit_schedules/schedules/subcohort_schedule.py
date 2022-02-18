@@ -157,7 +157,7 @@ visit10 = Visit(
     rbase=relativedelta(days=70),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=None,
+    requisitions=sub_70_requisitions,
     crfs=crf.get('day_70'),
     facility_name='5-day clinic')
 
