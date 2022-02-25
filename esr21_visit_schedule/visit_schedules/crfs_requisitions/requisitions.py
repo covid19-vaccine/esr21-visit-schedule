@@ -76,7 +76,7 @@ sub_70_requisitions = FormsCollection(
         panel=sars_serum_panel, required=True, additional=False),
     Requisition(
        show_order=30,
-       panel=urine_hcg_panel, required=True, additional=False),
+       panel=urine_hcg_panel, required=False, additional=False),
     Requisition(
         show_order=40,
         panel=wb_cmi_panel, required=True, additional=False),
