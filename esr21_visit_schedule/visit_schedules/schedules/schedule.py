@@ -2,7 +2,7 @@ from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
 
 from ..crfs_requisitions import crf, main_vax1_requisitions, main_fu_requisitions
-from ..crfs_requisitions import main_vax2_requisitions
+from ..crfs_requisitions import main_vax2_requisitions, requisitions_prns
 
 
 class Visit(BaseVisit):
@@ -15,7 +15,7 @@ class Visit(BaseVisit):
             crfs_unscheduled=crfs_unscheduled,
             requisitions_unscheduled=requisitions_unscheduled,
             crfs_prn=crfs_prn or crf.get('crf_prn'),
-            requisitions_prn=requisitions_prn,
+            requisitions_prn=requisitions_prn or requisitions_prns,
             **kwargs)
 
 
