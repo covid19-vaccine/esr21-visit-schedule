@@ -49,6 +49,11 @@ main_fu_requisitions = FormsCollection(
         show_order=10,
         panel=wb_cmi_panel, required=True, additional=False),)
 
+day_70_170_requisitions = FormsCollection(
+    Requisition(
+        show_order=10,
+        panel=humoral_immunogenicity_panel, required=True, additional=False),)
+
 # Subcohort Requisitions
 sub_post_vax_requisitions = FormsCollection(
     Requisition(
