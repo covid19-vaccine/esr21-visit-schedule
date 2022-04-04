@@ -5,6 +5,7 @@ from ..crfs_requisitions import crf, sub_post_vax_requisitions, sub_28_98_requis
 from ..crfs_requisitions import sub_70_requisitions, sub_fu_requisitions
 from ..crfs_requisitions import sub_fu2_requisitions, sub_182_requisitions
 from ..crfs_requisitions import sub_enrol_requisitions
+from ..crfs_requisitions import main_vax2_requisitions, requisitions_prns
 
 
 class Visit(BaseVisit):
@@ -17,7 +18,7 @@ class Visit(BaseVisit):
             crfs_unscheduled=crfs_unscheduled,
             requisitions_unscheduled=requisitions_unscheduled,
             crfs_prn=crfs_prn or crf.get('crf_prn'),
-            requisitions_prn=requisitions_prn,
+            requisitions_prn=requisitions_prn or requisitions_prns,
             **kwargs)
 
 
