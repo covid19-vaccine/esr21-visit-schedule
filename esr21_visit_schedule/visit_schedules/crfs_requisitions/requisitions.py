@@ -95,9 +95,6 @@ sub_28_98_requisitions = FormsCollection(
 
 sub_70_requisitions = FormsCollection(
     Requisition(
-        show_order=10,
-        panel=sars_pcr_panel, required=True, additional=False),
-    Requisition(
         show_order=20,
         panel=sars_serum_panel, required=True, additional=False),
     Requisition(

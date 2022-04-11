@@ -2,3 +2,6 @@ from .visit_schedule import esr21_visit_schedule
 from .schedules import esr21_illness_schedule, esr21_enrollment_schedule
 from .schedules import esr21_fu_schedule, esr21_sub_enrollment_schedule
 from .schedules import esr21_sub_fu_schedule
+from .schedules import esr21_enrol_schedule_v3, esr21_fu_schedule_v3
+from .schedules import esr21_sub_enrol_schedule3, esr21_sub_fu_schedule3
+from .schedules import esr21_booster_schedule, esr21_sub_boost_schedule
