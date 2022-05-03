@@ -2,7 +2,7 @@ from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
 
 from ..crfs_requisitions import crf, main_vax1_requisitions, main_fu_requisitions
-from ..crfs_requisitions import main_vax2_requisitions, requisitions_prns
+from ..crfs_requisitions import requisitions_prns
 
 
 class Visit(BaseVisit):
@@ -78,7 +78,6 @@ visit3 = Visit(
     rbase=relativedelta(days=28),
     rlower=relativedelta(days=3),
     rupper=relativedelta(days=3),
-    requisitions=main_fu_requisitions,
     crfs=crf.get('followup'),
     facility_name='5-day clinic')
 
@@ -90,7 +89,7 @@ visit4 = Visit(
     rlower=relativedelta(days=14),
     rupper=relativedelta(days=14),
     requisitions=None,
-    crfs=crf.get('day_70'),
+    crfs=crf.get('day_70_170'),
     facility_name='5-day clinic')
 
 visit5 = Visit(

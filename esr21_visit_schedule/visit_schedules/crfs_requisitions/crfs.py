@@ -73,7 +73,7 @@ crfs_followup = FormsCollection(
     name='followup',
 )
 
-crfs_day_70 = FormsCollection(
+crfs_day_70_170 = FormsCollection(
     Crf(show_order=1, model='esr21_subject.physicalexam'),
     Crf(show_order=2, model='esr21_subject.vitalsigns'),
     Crf(show_order=3, model='esr21_subject.pregnancytest',
@@ -87,7 +87,7 @@ crfs_day_70 = FormsCollection(
         required=False),
     Crf(show_order=8, model='esr21_subject.specialinterestadverseevent',
         required=False),
-    name='day_70',
+    name='day_70_170',
 )
 
 crfs_ill_initial = FormsCollection(
@@ -120,7 +120,7 @@ crfs_ill_28 = FormsCollection(
 )
 
 crf.update({'enrollment': crfs_initial,
-            'day_70': crfs_day_70,
+            'day_70_170': crfs_day_70_170,
             'followup': crfs_followup,
             'ill_initial': crfs_ill_initial,
             'ill_day4': crfs_ill_4,
