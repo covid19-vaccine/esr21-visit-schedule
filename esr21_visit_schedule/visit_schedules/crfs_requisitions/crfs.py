@@ -34,6 +34,8 @@ crfs_prn = FormsCollection(
         required=False, additional=False),
     Crf(show_order=16, model='esr21_subject.covid19symptomaticinfections',
         required=False, additional=False),
+    Crf(show_order=17, model='esr21_subject.pregoutcome', required=False,
+        additional=False),
     name='crf_prn')
 
 crfs_initial = FormsCollection(
@@ -56,6 +58,8 @@ crfs_initial = FormsCollection(
         required=False),
     Crf(show_order=11, model='esr21_subject.vitalsigns'),
     Crf(show_order=12, model='esr21_subject.covid19preventativebehaviours'),
+    Crf(show_order=13, model='esr21_subject.pregoutcome', required=False,
+        additional=False),
     name='enrollment',
 )
 
@@ -70,6 +74,8 @@ crfs_followup = FormsCollection(
     Crf(show_order=5, model='esr21_subject.covid19symptomaticinfections'),
     Crf(show_order=6, model='esr21_subject.pregnancystatus',
         required=False),
+    Crf(show_order=7, model='esr21_subject.pregoutcome', required=False,
+        additional=False),
     name='followup',
 )
 
@@ -87,6 +93,8 @@ crfs_day_70_170 = FormsCollection(
         required=False),
     Crf(show_order=8, model='esr21_subject.specialinterestadverseevent',
         required=False),
+    Crf(show_order=9, model='esr21_subject.pregoutcome', required=False,
+        additional=False),
     name='day_70_170',
 )
 
@@ -98,6 +106,8 @@ crfs_ill_initial = FormsCollection(
     Crf(show_order=5, model='esr21_subject.covid19symptomaticinfections'),
     Crf(show_order=6, model='esr21_subject.seriousadverseevent',
         required=False),
+    Crf(show_order=7, model='esr21_subject.pregoutcome', required=False,
+        additional=False),
     name='ill_initial',
 )
 
@@ -106,6 +116,8 @@ crfs_ill_4 = FormsCollection(
     Crf(show_order=2, model='esr21_subject.covid19symptomaticinfections'),
     Crf(show_order=3, model='esr21_subject.seriousadverseevent',
         required=False),
+    Crf(show_order=4, model='esr21_subject.pregoutcome', required=False,
+        additional=False),
     name='ill_day4',
 )
 
@@ -116,6 +128,8 @@ crfs_ill_28 = FormsCollection(
     Crf(show_order=4, model='esr21_subject.covid19symptomaticinfections'),
     Crf(show_order=5, model='esr21_subject.seriousadverseevent',
         required=False),
+    Crf(show_order=6, model='esr21_subject.pregoutcome', required=False,
+        additional=False),
     name='ill_day28',
 )
 
