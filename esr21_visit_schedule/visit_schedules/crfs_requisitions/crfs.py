@@ -34,8 +34,6 @@ crfs_prn = FormsCollection(
         required=False, additional=False),
     Crf(show_order=16, model='esr21_subject.covid19symptomaticinfections',
         required=False, additional=False),
-    Crf(show_order=17, model='esr21_subject.pregoutcome', required=False,
-        additional=False),
     name='crf_prn')
 
 crfs_initial = FormsCollection(
@@ -46,8 +44,8 @@ crfs_initial = FormsCollection(
     Crf(show_order=4, model='esr21_subject.rapidhivtesting'),
     Crf(show_order=5, model='esr21_subject.pregnancystatus',
         required=False, additional=False),
-    Crf(show_order=6, model='esr21_subject.pregnancytest',
-        required=False, additional=False),
+    Crf(show_order=6, model='esr21_subject.pregoutcome', required=False,
+        additional=False),
     Crf(show_order=7, model='esr21_subject.vaccinationdetails',
         required=False, additional=False),
     Crf(show_order=8, model='esr21_subject.adverseevent',
@@ -58,8 +56,8 @@ crfs_initial = FormsCollection(
         required=False),
     Crf(show_order=11, model='esr21_subject.vitalsigns'),
     Crf(show_order=12, model='esr21_subject.covid19preventativebehaviours'),
-    Crf(show_order=13, model='esr21_subject.pregoutcome', required=False,
-        additional=False),
+    Crf(show_order=13, model='esr21_subject.pregnancytest',
+        required=False, additional=False),
     name='enrollment',
 )
 
@@ -82,8 +80,8 @@ crfs_followup = FormsCollection(
 crfs_day_70_170 = FormsCollection(
     Crf(show_order=1, model='esr21_subject.physicalexam'),
     Crf(show_order=2, model='esr21_subject.vitalsigns'),
-    Crf(show_order=3, model='esr21_subject.pregnancytest',
-        required=False),
+    Crf(show_order=3, model='esr21_subject.pregoutcome', required=False,
+        additional=False),
     Crf(show_order=4, model='esr21_subject.pregnancystatus',
         required=False),
     Crf(show_order=5, model='esr21_subject.vaccinationdetails'),
@@ -93,8 +91,8 @@ crfs_day_70_170 = FormsCollection(
         required=False),
     Crf(show_order=8, model='esr21_subject.specialinterestadverseevent',
         required=False),
-    Crf(show_order=9, model='esr21_subject.pregoutcome', required=False,
-        additional=False),
+    Crf(show_order=9, model='esr21_subject.pregnancytest',
+        required=False),
     name='day_70_170',
 )
 
