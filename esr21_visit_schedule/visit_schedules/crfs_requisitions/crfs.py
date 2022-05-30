@@ -91,7 +91,11 @@ crfs_day_70_170 = FormsCollection(
         required=False),
     Crf(show_order=8, model='esr21_subject.specialinterestadverseevent',
         required=False),
-    Crf(show_order=9, model='esr21_subject.pregnancytest',
+    Crf(show_order=9, model='esr21_subject.pregnancytest', required=False),
+    Crf(show_order=10, model='esr21_subject.demographicsdata', required=False),
+    Crf(show_order=11, model='esr21_subject.medicalhistory', required=False),
+    Crf(show_order=12, model='esr21_subject.rapidhivtesting', required=False),
+    Crf(show_order=13, model='esr21_subject.covid19preventativebehaviours',
         required=False),
     name='day_70_170',
 )
