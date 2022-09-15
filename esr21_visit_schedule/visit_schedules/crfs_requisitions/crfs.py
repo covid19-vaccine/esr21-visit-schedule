@@ -34,6 +34,8 @@ crfs_prn = FormsCollection(
         required=False, additional=False),
     Crf(show_order=16, model='esr21_subject.covid19symptomaticinfections',
         required=False, additional=False),
+    Crf(show_order=17, model='esr21_subject.pregoutcome',
+        required=False, additional=False),
     name='crf_prn')
 
 crfs_initial = FormsCollection(
